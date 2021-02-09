@@ -63,6 +63,7 @@ body {
 }
 header {
   font-size: 2rem;
+  z-index: 1;
 }
 
 header,
@@ -79,7 +80,7 @@ form button {
   border: none;
   background: white;
 }
-form button {
+form button{
   color: rgb(11, 42, 1);
   background: #f7fffe;
   cursor: pointer;
@@ -100,7 +101,26 @@ form button:hover {
   list-style: none;
 }
 
+.shift{
+  background: #4CAF50;
+  color: antiquewhite;
+  width: 100px;
+  height: 50px;
+  /* border-radius: 25%; */
+  box-shadow: 0 8px 16px 0 rgba(251, 251, 251, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.nameData{
+  width: 500px;
+}
+
+.shift:hover{
+  background: #f6f6f6;
+  color: #227c17;
+}
+
 .todo {
+  cursor: not-allowed;
   margin: 0.5rem;
   background: white;
   font-size: 1.5rem;
@@ -108,8 +128,16 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
+
+.todo:hover{
+  background-color: rgb(99, 131, 131);
+  color: #f7fffe;
+  transform: scale(1.5)
+}
+
+
 .filter-todo {
   padding: 1rem;
 }
@@ -130,7 +158,11 @@ form button:hover {
   background:  rgb(69, 160, 0);
 }
 .todo-item {
-  padding: 0rem 0.5rem;
+  /* padding: 0rem 0.5rem; */
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5%;
+  cursor: not-allowed
 }
 
 .fa-trash,
@@ -171,6 +203,25 @@ select {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
+}
+
+input[type="text"]{
+  padding-left: 10px;
+}
+
+input[type="text"]:hover{
+  background-color: azure;
+}
+
+input[type="text"]:focus{
+  background-color: rgb(61, 156, 29);
+  color: #f7fffe;
+  text-decoration-color: #f7fffe;
+  content: none;
+}
+
+table{
+  width: 95%;
 }
 /* Arrow */
 .select::after {
