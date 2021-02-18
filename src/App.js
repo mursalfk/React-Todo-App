@@ -15,10 +15,9 @@ function App() {
       setName("Zohaad");
     } else if (name == "Zohaad"){
       setName("Mursal")
-    }
-    
+    }    
   }
-  
+
   // State vs. Components vs. Props vs. Rerendering
   
   return (
